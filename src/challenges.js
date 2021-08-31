@@ -28,17 +28,12 @@ function splitSentence(phrase) {
       splitPhrase.push(word);
     }
   }
-
   return splitPhrase;
 }
 
-console.log(splitSentence('Go Trybe'));
-console.log(splitSentence('vamo que vamo'));
-console.log(splitSentence('foquete'));
-
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(stringArray) {
+  return stringArray[stringArray.length - 1] + ', ' + stringArray[0]
 }
 
 // Desafio 5
