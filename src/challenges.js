@@ -16,8 +16,25 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(phrase) {
   let splitPhrase = [];
-  
+  let word = '';
+  for (let key in phrase) {
+    if (phrase[key] === ' ') {
+      splitPhrase.push(word);
+      word = '';
+    } else {
+      word += phrase[key];
+    }
+    if (key == phrase.length - 1) {
+      splitPhrase.push(word);
+    }
+  }
+
+  return splitPhrase;
 }
+
+console.log(splitSentence('Go Trybe'));
+console.log(splitSentence('vamo que vamo'));
+console.log(splitSentence('foquete'));
 
 // Desafio 4
 function concatName() {
