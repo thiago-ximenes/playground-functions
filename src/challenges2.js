@@ -1,12 +1,12 @@
 // Desafio 10
-function techList(technologies, name) {
+function techList(technologies, studentName) {
   let result = [];
-  let techNames = technologies.sort();
+  technologies.sort();
   if (technologies.length > 0) {
     for (let item of technologies) {
       result.push({
         tech: item,
-        name: name,
+        name: studentName,
       });
     }
   } else {
