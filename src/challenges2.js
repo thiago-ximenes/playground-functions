@@ -16,9 +16,17 @@ function techList(technologies, studentName) {
 }
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(phoneNumber) {
+  let number = phoneNumber;
+  if (number.length === 11) {
+    number = +number.join('');
+    number = number.toString();
+    return number.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+  }
+  return 'não é possível gerar um número de telefone com esses valores';
 }
+
+console.log(generatePhoneNumber([0, 2, 3, 4, 5, 7, 7, 8, 9, 0, 7]));
 
 // Desafio 12
 function triangleCheck() {
