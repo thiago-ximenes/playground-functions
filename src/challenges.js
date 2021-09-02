@@ -101,8 +101,6 @@ function decode(code) {
 
   return result;
 }
-console.log(encode('Hi there'));
-console.log(decode('Hi there'));
 
 module.exports = {
   calcArea,
